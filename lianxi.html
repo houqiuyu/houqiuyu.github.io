@@ -86,26 +86,26 @@
         }
     }
     typing();
-        function tiao(){
-    window.open('xx.html',"_self");
-}
-        setTimeout("tiao()",45000);
-//     function go()
-//     {
-//        window.open('xx.html',"_self");
-//     }
-//     function   notgo()
-//     {
-//         clearTimeout(mygo);
-//         mygo=setTimeout(go,40000);
-//     }
-//     document.onmouseover=notgo;
-//     document.onmousemove=notgo;
-//     document.onmouseout=notgo;
-//     document.onmousedown=notgo;
-//     document.onmouseup=notgo;
-//     document.onkeydown=notgo;
-//     mygo=setTimeout(go,10000);
+//         function tiao(){
+//     window.open('xx.html',"_self");
+// }
+//         setTimeout("tiao()",45000);
+    function go()
+    {
+       window.open('xx.html',"_self");
+    }
+    function   notgo()
+    {
+        clearTimeout(mygo);
+        mygo=setTimeout(go,45000);
+    }
+    document.onmouseover=notgo;
+    document.onmousemove=notgo;
+    document.onmouseout=notgo;
+    document.onmousedown=notgo;
+    document.onmouseup=notgo;
+    document.onkeydown=notgo;
+    mygo=setTimeout(go,45000);
 </script>
 </body>
 </html>`
