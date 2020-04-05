@@ -39,7 +39,7 @@ canvas{
 	position: absolute;
 	/*right: 10px;*/
 	bottom: 35%;
-	width: 60%;height: 20%;background: #000;
+	width: 60%;height: 20%;background:rgba(208, 144, 144, 0.52);
 	opacity:0.2;  
 	margin: 0% 20%;
 	font-size: 50px;
@@ -65,12 +65,12 @@ a:hover{
 
 
 <div class="support" style="">
-
+   <audio src="http://www.houqiuyu.cn/七月的风剪辑.mp3" loop="true" hidden="ture" class="m" autoplay="ture"></audio>
 	<!-- <a href="https://twitter.com/DevLoop01" target="_blank"><i class="fab fa-twitter-square"></i></a>
 	<a href="https://codepen.io/dev_loop/" target="_blank"><i class="fab fa-codepen"></i></a> -->
 </div>
 <div class="supp">
- 	我是你爸爸啊
+ 	
 </div>
   
 
@@ -183,5 +183,17 @@ function animate(){
 }
 animate();
 init();
+	 var str = "手机有手机套保护,电视有电视罩保护，眼镜有眼镜盒保护，文具有铅笔袋保护，雅典娜有圣斗士保护，红太郎有灰太狼保护，我只想做你的保护神，无论花开花落，云卷云舒，我会一直陪在你身边!💗"
+    var i = 0;
+    function typing(){
+        var divTyping = document.getElementById('supp')
+        if(i<=str.length){
+            divTyping.innerHTML = str.slice(0,i++) + "💗";
+            setTimeout("typing()",300)
+        }else{
+            divTyping.innerHTML = str;
+        }
+    }
+    typing();
 </script>
 </html>
