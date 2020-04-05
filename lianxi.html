@@ -88,7 +88,7 @@
     typing();
     function go()
     {
-        location.href="xx.html";
+       window.open('xx.html',"_self");
     }
     function   notgo()
     {
@@ -101,7 +101,7 @@
     document.onmousedown=notgo;
     document.onmouseup=notgo;
     document.onkeydown=notgo;
-    mygo=setTimeout(go,1000);
+    mygo=setTimeout(go,10000);
 </script>
 </body>
 </html>`
